@@ -3,7 +3,6 @@ let url = document.getElementById("url");
 let form = document.getElementById("form");
 let bookmarks = [];
 
-// ✅ Fix: assign parsed localStorage to bookmarks
 if (localStorage.getItem("BookMarkers") != null) {
   bookmarks = JSON.parse(localStorage.getItem("BookMarkers"));
   displayData();
@@ -40,7 +39,7 @@ function addData() {
   bookmarks.push(bookmark);
   console.log(bookmarks);
 
-  // ✅ Fix: stringify bookmarks before saving
+
   localStorage.setItem("BookMarkers", JSON.stringify(bookmarks));
   displayData();
   clearInputs();
@@ -65,7 +64,7 @@ function displayData() {
 
 function deleteUrl(index) {
   bookmarks.splice(index, 1);
-  // ✅ Fix: stringify when updating localStorage
+
   localStorage.setItem("BookMarkers", JSON.stringify(bookmarks));
   displayData();
 }
