@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container mt-5">
+        <div class="row">
+          <header class="d-flex justify-content-center" >
+            <h1 class="pacifico-regular text-center display-4 m-5">Bookmarker</h1>
+          </header>
+         <div class="bookmark p-5 border-dotted">
+          <h4 class="text-center righteous-regular multicolor"> 
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+              class="fa-solid fa-bookmark"
+            ></i>
+          </h4>
+          <form action="">
+            <label for="name" class="form-label pt-sans-caption-bold"
+              ><i class="fa-solid fa-book-bookmark"></i> Site Name</label
+            >
+            <input
+              type="text"
+              class="form-control pt-sans-caption-bold mt-1 mb-1"
+              id="name"
+              placeholder="Bookmark Name"
+            />
+            <label for="url" class="form-label pt-sans-caption-bold"
+              ><i class="fa-solid fa-link"></i> Site URL</label
+            >
+            <input
+              type="text"
+              class="form-control pt-sans-caption-bold mt-1 mb-4"
+              id="url"
+              placeholder="Website URL"
+            />
+            <div class="text-center">
+            <button type="button" class="btn btn-danger pt-sans-caption-bold w-25">Submit</button>
+            </div>
+          </form>
+        </div>
+        <table class="table table-hover mt-5 text-center pt-sans-caption-bold">
+  <thead>
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Website Name</th>
+      <th scope="col">Visit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+     <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+     </table>
+        </div>
+      </div>
+    </main>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
