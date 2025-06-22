@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
@@ -30,7 +31,7 @@
               class="fa-solid fa-bookmark"
             ></i>
           </h4>
-          <form action="">
+          <form action="" id="form">
             <label for="name" class="form-label pt-sans-caption-bold"
               ><i class="fa-solid fa-book-bookmark"></i> Site Name</label
             >
@@ -39,6 +40,7 @@
               class="form-control pt-sans-caption-bold mt-1 mb-1"
               id="name"
               placeholder="Bookmark Name"
+              required
             />
             <label for="url" class="form-label pt-sans-caption-bold"
               ><i class="fa-solid fa-link"></i> Site URL</label
@@ -48,9 +50,10 @@
               class="form-control pt-sans-caption-bold mt-1 mb-4"
               id="url"
               placeholder="Website URL"
+              required
             />
             <div class="text-center">
-            <button type="button" class="btn btn-danger pt-sans-caption-bold w-25">Submit</button>
+            <button type="button" class="btn btn-danger pt-sans-caption-bold w-25" onclick="addData()">Submit</button>
             </div>
           </form>
         </div>
@@ -63,18 +66,14 @@
       <th scope="col">Delete</th>
     </tr>
   </thead>
-  <tbody>
-     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
+  <tbody id="table_body">
+
   </tbody>
      </table>
         </div>
       </div>
     </main>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/main.js"></script>
   </body>
 </html>
